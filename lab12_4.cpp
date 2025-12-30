@@ -1,10 +1,17 @@
 #include<iostream>
 #include<string>
 using namespace std;
-
+/*
 void mySwap(int &,int &); 
 void mySwap(string &,string &); 
-void mySwap(char &,char &); 
+void mySwap(char &,char &);    */
+
+template <typename T> 
+void mySwap(T &x, T &y) {
+    T temp = x;
+    x = y;
+    y = temp;
+}
 
 
 int main(){
@@ -35,7 +42,7 @@ int main(){
 	return 0;
 }
 
-
+/*
 void mySwap(int &x,int &y){
 	int hehe ; 
 	hehe = x ; 
@@ -58,3 +65,4 @@ void mySwap(char &p,char &q){
 	q = pepe ; 
 
 }
+*/
